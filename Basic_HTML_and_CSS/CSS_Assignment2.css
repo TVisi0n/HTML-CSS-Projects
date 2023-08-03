@@ -1,0 +1,13 @@
+ul {
+	list-style-type: circle;
+}
+
+ol {
+	list-style-type: upper-roman;
+}
+
+h1 {
+	text-shadow: 2px 2px red;
+	color: white;
+	background-color: black;
+}
