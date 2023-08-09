@@ -1,0 +1,58 @@
+html {
+    font-family: 'Oswald', sans-serif, Arial, Helvetica, sans-serif;
+    font-size: 30px;
+}
+
+.reservation form {
+    font-size: 15px;
+    outline: none;
+    font-weight: 600;
+    color: #8D8E8F;
+    padding: 12px 12px;
+    width: 90%;
+    border: 1px solid #808080;
+    margin: 2% auto;
+    border-radius: 7px;
+    background: #fada80;
+    box-shadow:  2px 3px 3px 0px rgba(0,0,0,0.3);
+    font-family: 'Raleway', sans-serif;
+}
+
+.reservation input[type="text"] {
+    font-size: 25px;
+    outline: none;
+    font-weight: 600;
+    color: #8D8E8F;
+    padding: 2% 1% 2% 7%;
+    width: 87%;
+    border-top: 1px solid #090B0D;
+    border-right: 2px solid #424549;
+    border-bottom: 2px solid #424549;
+    border-left: 1px solid #090B0D;
+    margin: 10px 1em;
+    border-radius: 7px;
+    background: #13161B;
+    box-shadow: inset 0px 3px 0px 0px rgba(5, 5, 5, .15);
+    font-family: 'Raleway', sans-serif;
+}
+.terms {
+    float: right;
+}
+
+.container h1, p, h2 {
+    text-align: center;
+}
+
+.submit input[type="submit"] {
+    cursor: pointer;
+    background-color: green;
+    border-radius: 7px;
+    width: 20%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-weight: 900;
+    font-size: 14px;
+    margin: 0px 3%;
+    padding: 10px 0px;
+}
