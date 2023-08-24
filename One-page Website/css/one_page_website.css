@@ -37,6 +37,7 @@ html {
 }
 .terms {
     float: right;
+    padding-top: 12px;
 }
 
 .container h1, p, h2 {
@@ -55,4 +56,12 @@ html {
     font-size: 14px;
     margin: 0px 3%;
     padding: 10px 0px;
+}
+
+h3 {
+    text-align: center;
+}
+
+.submit {
+    padding-top: 12px;
 }
