@@ -1,9 +1,9 @@
 <!DOCTYPE HTML>
 <html lang="en">
 	<head>
-		<title>Luxury Cars | Portland</title>
+		<title>Luxury Flowers | Portland</title>
 		<meta charset="utf-8">
-		<link rel="stylesheet" href="./css/one_page_website.css">
+		<link rel="stylesheet" type="text/css" href="./css/one_page_website.css">
 		<style src="js/main.js"></style>
 	</head>
 	<body>
@@ -25,130 +25,92 @@
 		<div id="home">
 			<div>
 				<div>
-					<span>Luxury Cars Portland</span>
+					<span>Luxury Flowers PDX</span>
 				</div>
 			</div>
 		</div>
 		<!-- END HOME -->
 		
-		<!-- GALLERY -->
-		<section>
-			<div id="gallery">
-				<h1>Gallery</h1>
-				<div>
-					
-					<!-- PHOTO-CONTAINER 1 -->
-					<div>
-						<div>
-							<img src="./images/thumb/thumbnail_1.jpg" alt="">
-							<div>
-								<h3>Click to Enlarge</h3>
-								<p>We carry the most luxurious cars in Portland</p>
-							</div>
-						</div>
-					</div>
-					<!-- END PHOTO-CONTAINER 1 -->
-					
-					<!-- PHOTO-CONTAINER 2 -->
-					<div>
-						<div>
-							<img src="./images/thumb/thumbnail_2.jpg" alt="">
-							<div>
-								<h3>Click to Enlarge</h3>
-								<p>We carry the most luxurious cars in Portland</p>
-							</div>
-						</div>
-					</div>
-					<!-- END PHOTO-CONTAINER 2 -->
-					
-					<!-- PHOTO-CONTAINER 3 -->
-					<div>
-						<div>
-							<img src="./images/thumb/thumbnail_3.jpg" alt="">
-							<div>
-								<h3>Click to Enlarge</h3>
-								<p>We carry the most luxurious cars in Portland</p>
-							</div>
-						</div>
-					</div>
-					<!-- END PHOTO-CONTAINER 3 -->
-					
-					<!-- PHOTO-CONTAINER 4 -->
-					<div>
-						<div>
-							<img src="./images/thumb/thumbnail_4.jpg" alt="">
-							<div>
-								<h3>Click to Enlarge</h3>
-								<p>We carry the most luxurious cars in Portland</p>
-							</div>
-						</div>
-					</div>
-					<!-- END PHOTO-CONTAINER 4 -->
-					
-					<!-- PHOTO-CONTAINER 5 -->
-					<div>
-						<div>
-							<img src="./images/thumb/thumbnail_5.jpg" alt="">
-							<div>
-								<h3>Click to Enlarge</h3>
-								<p>We carry the most luxurious cars in Portland</p>
-							</div>
-						</div>
-					</div>
-					<!-- END PHOTO-CONTAINER 5 -->
-					
-					<!-- PHOTO-CONTAINER 6 -->
-					<div>
-						<div>
-							<img src="./images/thumb/thumbnail_6.jpg" alt="">
-							<div>
-								<h3>Click to Enlarge</h3>
-								<p>We carry the most luxurious cars in Portland</p>
-							</div>
-						</div>
-					</div>
-					<!-- END PHOTO-CONTAINER 6 -->
-					
-					<!-- PHOTO-CONTAINER 7 -->
-					<div>
-						<div>
-							<img src="./images/thumb/thumbnail_7.jpg" alt="">
-							<div>
-								<h3>Click to Enlarge</h3>
-								<p>We carry the most luxurious cars in Portland</p>
-							</div>
-						</div>
-					</div>
-					<!-- END PHOTO-CONTAINER 7 -->
-					
-					<!-- PHOTO-CONTAINER 8 -->
-					<div>
-						<div>
-							<img src="./images/thumb/thumbnail_8.jpg" alt="">
-							<div>
-								<h3>Click to Enlarge</h3>
-								<p>We carry the most luxurious cars in Portland</p>
-							</div>
-						</div>
-					</div>
-					<!-- END PHOTO-CONTAINER 18 -->
-					
-					<!-- PHOTO-CONTAINER 9 -->
-					<div>
-						<div>
-							<img src="./images/thumb/thumbnail_9.jpg" alt="">
-							<div>
-								<h3>Click to Enlarge</h3>
-								<p>We carry the most luxurious cars in Portland</p>
-							</div>
-						</div>
-					</div>
-					<!-- END PHOTO-CONTAINER 9 -->
-					
-				</div>
+		<!-- IMAGES FOR LIGHT BOX -->
+		<div class="row">
+			<div class="column">
+				<img src="images/thumb/plant1-small.png" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
 			</div>
-		</section>
-		<!-- END GALLERY -->
+			<div class="column">
+				<img src="images/thumb/plant2-small.png" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+			</div>
+			<div class="column">
+				<img src="images/thumb/plant3-small.png" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+			</div>
+			<div class="column">
+				<img src="images/thumb/plant4-small.png" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+			</div>
+		</div>
+		<!-- END OF IMAGES FOR LIGHT BOX -->
+
+		<!-- LIGHTBOX -->
+
+		<div id="myModal" class="modal">
+			<span class="close cursor" onclick="closeModal()">&times;</span>
+			<div class="modal-content">
+
+				<div class="mySlides">
+					<div class="numbertext">1 / 4</div>
+					<img src="images/thumb/plant1.png" style="width: 100%;">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">2 / 4</div>
+					<img src="images/thumb/plant2.png" style="width: 100%;">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">3 / 4</div>
+					<img src="images/thumb/plant3.png" style="width: 100%;">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">4 / 4</div>
+					<img src="images/thumb/plant4.png" style="width: 100%;">
+				</div>
+
+		<!-- END OF LIGHTBOX -->
+
+		<!-- CONTROLS -->
+
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+		<!-- END OF CONTROLS -->
+
+		<!-- CAPTION TEXT -->
+
+			<div class="caption-container">
+				<p id="caption"></p>
+			</div>
+
+		<!-- END OF CAPTION TEXT -->
+
+		<!-- THUMBNAIL IMAGE CONTROLS -->
+
+			<div class="column">
+				<img class="demo" src="images/thumb/plant1.png" onclick="currentSlide(1)" alt="">
+			</div>
+
+			<div class="column">
+				<img class="demo" src="images/thumb/plant2.png" onclick="currentSlide(2)" alt="">
+			</div>
+
+			<div class="column">
+				<img class="demo" src="images/thumb/plant3.png" onclick="currentSlide(3)" alt="">
+			</div>
+
+			<div class="column">
+				<img class="demo" src="images/thumb/plant4.png" onclick="currentSlide(4)" alt="">
+			</div>
+		</div>
+	</div>
+		<!-- END OF THUMBNAIL IMAGE CONTROLS -->
 		
 		<!-- VIDEO -->
 			<div id="video">
@@ -201,6 +163,6 @@
 			www.luxurycars.com &nbsp;|&nbsp; &copy; 2023
 		</div>
 		<!-- END FOOTER -->
-	
+		
 	</body>
 </html>
